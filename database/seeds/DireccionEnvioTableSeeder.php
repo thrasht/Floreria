@@ -14,10 +14,11 @@ class DireccionEnvioTableSeeder extends Seeder {
     {
 
 		$faker = Faker::create();
+		ini_set('memory_limit', '-1');
 
-		foreach(range(1,55000) as $index)
+		foreach(range(1,900000) as $index)
 		{
-			if(rand(1,1000) == 500)
+			if(rand(1,50) == 25)
 				$id_estado = rand(1,32);
 			else
 				$id_estado = 24;

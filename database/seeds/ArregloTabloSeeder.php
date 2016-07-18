@@ -14,7 +14,7 @@ class ArregloTableSeeder extends Seeder {
     {
 		$faker = Faker::create();
 
-		foreach(range(1,1000) as $index)
+		foreach(range(1,9000) as $index)
 		{
 			$total = 0.0;
 
@@ -35,6 +35,9 @@ class ArregloTableSeeder extends Seeder {
 			{
 				$id_flor = rand(1,74);
 				$cant   = rand(1,10);
+
+				if($id_flor == 65 || $id_flor == 66)
+					$id_flor = $id_flor + 2;
 
 				$flor = \DB::table('Flores')->where('id', $id_flor)->first();
 

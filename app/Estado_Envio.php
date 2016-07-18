@@ -6,5 +6,6 @@ class Estado_Envio extends Model {
 
 	//
 	protected $table = 'Estados_Envio';
+	protected $fillable = ['nombre', 'costo'];
 
 }

@@ -13,8 +13,9 @@ class ClienteTableSeeder extends Seeder {
     public function run()
     {
 		$faker = Faker::create();
+		ini_set('memory_limit', '-1');
 
-		foreach(range(1,47000) as $index)
+		foreach(range(1,1000000) as $index)
 		{
 			\DB::table('Clientes')->insert(array(
 
