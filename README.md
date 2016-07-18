@@ -13,7 +13,7 @@ https://github.com/thrasht/Floreria/blob/master/app/Http/Controllers/QueriesCont
 
 Examples:
 
--Querie of the most sell flower in one year
+-Query of the most sell flower in one year
 
 public function flores(Request $req)
 	{
